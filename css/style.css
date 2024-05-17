@@ -1,0 +1,167 @@
+:root{
+    --white-color : #fff;
+    --main-color: #f03c6d;
+    --second-color: #5c84ec;
+    --overlay-color: rgba(92, 132, 236, .8);
+}
+*{
+    transition: all .4s;
+    font-family: "Lato", sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom,var(--main-color),var(--second-color));
+}
+@media (max-width:580px) {
+    body{
+        overflow-x: hidden !important;
+    }
+}
+.stickyadd{
+    background-color: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+h1,h2{
+    font-weight: 700
+}
+h3,h4,h5,h6{
+    font-weight: 600 !important;
+}
+h2,h3{
+    background: linear-gradient(to bottom,var(--main-color),#000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a{
+    color: var(--white-color) !important;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+/* Scroll Up */
+.scroll-up {
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+/* Start Navbar Section */
+.nav-item a, .navbar-brand{
+    color: var(--white-color);
+}
+.navbar-brand:hover,.nav-item a:hover,.nav-item .active{
+    color: var(--main-color) !important;
+}
+/* End Navbar Section */
+
+/* Start Home Section */
+#home {
+    background-image: linear-gradient(to right, var(--overlay-color),var(--overlay-color)), url("../images/home-1.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+/* End Home Section */
+
+/* Start About Section */
+#about{
+    margin-top: -150px;
+}
+@media (max-width:992px) {
+    #about{
+        margin: 48px 0;
+    }
+}
+#about .about-info{
+    background-image: linear-gradient(to right, var(--second-color),var(--main-color));
+    background-position: center center;
+    background-size: cover;
+}
+/* End About Section */
+
+/* Start Service Section */
+#service .icon-box .icon i{
+    background: linear-gradient(to bottom,var(--main-color),#000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+#service .icon-box .icon i:hover{
+    background: linear-gradient(to bottom,var(--main-color),#fff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* End Service Section */
+
+/* Start Team Section */
+#team .team-image{
+    background-image: linear-gradient(to right, var(--second-color),var(--main-color));
+}
+/* End Team Section */
+
+/* Start Project Section */
+#project .project-info p{
+    font-size: 18px;
+}
+#project .project-info i{
+    background: linear-gradient(to bottom,var(--main-color),#000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+#project .project-info i:hover{
+    background: linear-gradient(to bottom,var(--main-color),#fff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* End Project Section */
+
+/* Start Contact Section */
+#contact .map{
+    height: 300px;
+}
+#contact .map{
+    background-image: linear-gradient(to right, var(--overlay-color),var(--overlay-color)), url("../images/contact-1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#contact .contact-links{
+    background-image: linear-gradient(to right, var(--second-color),var(--main-color));
+}
+#contact .contact-us{
+    margin-top: -120px;
+}
+#contact .contact-form form textarea{
+    height: 150px;
+}
+#contact .contact-info .data-icons{
+    cursor: pointer;
+}
+#contact .contact-info .data-icons,#contact .contact-info .social-icons a i{
+    color: #fff;
+}
+#contact .contact-info .data-icons:hover,#contact .contact-info .social-icons a i:hover{
+    color: #000;
+}
+/* End Contact Section */
+/* Start Footer */
+footer span{
+    background: linear-gradient(to bottom,var(--main-color),#fff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* End Footer */
